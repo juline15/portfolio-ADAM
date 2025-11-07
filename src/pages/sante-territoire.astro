@@ -1,0 +1,412 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="min-h-screen text-white relative px-4 md:px-10 lg:px-20">
+        <!-- Fond noir pur avec dégradés radiaux -->
+        <div class="fixed inset-0 -z-20 bg-black">
+            <div
+                class="absolute inset-0"
+                style="
+                background: 
+                    radial-gradient(circle at 15% 15%, rgba(162, 217, 228, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 25%, rgba(106, 130, 230, 0.4) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 50%, rgba(238, 132, 198, 0.3) 0%, transparent 45%),
+                    radial-gradient(circle at 25% 75%, rgba(106, 130, 230, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 80%, rgba(162, 217, 228, 0.3) 0%, transparent 45%);
+            "
+            >
+            </div>
+        </div>
+
+        <!-- Overlay sombre avec blur -->
+        <div
+            class="fixed inset-0 -z-10 backdrop-blur-md"
+            style="background-color: rgba(0, 0, 0, 0.55);"
+        >
+        </div>
+
+        <!-- Hero Section -->
+        <section
+            class="container mx-auto px-4 md:px-8 pt-32 md:pt-40 pb-10 md:pb-20"
+        >
+            <h1
+                class="h1 underline mb-6 md:mb-8 text-4xl md:text-5xl lg:text-6xl"
+            >
+                Santé et Territoire
+            </h1>
+
+            <!-- Section Introduction -->
+            <div class="mb-12 md:mb-16">
+                <h2
+                    class="h2 text-pink-300 mb-4 md:mb-6 text-2xl md:text-3xl lg:text-4xl"
+                >
+                    Santé et Territoire, qu'est ce que c'est ?
+                </h2>
+                <div
+                    class="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start"
+                >
+                    <!-- Colonne gauche: texte + 2 photos -->
+                    <div class="flex-1 flex flex-col gap-4 md:gap-6">
+                        <p class="text-base md:text-lg">
+                            Santé et Territoire est un projet réalisé à partir
+                            de données ouvertes de data.gouv.fr, pour comprendre
+                            l’accès aux soins selon les territoires. Le but est
+                            de trier des jeux de données publics, puis de les
+                            mettre en cartes et graphiques interactifs pour
+                            éclairer les enjeux locaux.
+                        </p>
+
+                        <!-- Galerie photos - 2 photos côte à côte -->
+                        <div class="flex gap-3 md:gap-4">
+                            <img
+                                src="/src/assets/img/sante1.webp"
+                                alt="Photo Santé et Territoire 1"
+                                class="w-24 h-24 md:flex-1 md:h-48 object-cover rounded-xl"
+                            />
+                            <img
+                                src="/src/assets/img/sante2.webp"
+                                alt="Photo Santé et Territoire 2"
+                                class="w-24 h-24 md:flex-1 md:h-48 object-cover rounded-xl"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Colonne droite: logo/image -->
+                    <div class="flex-shrink-0 mx-auto lg:mx-0">
+                        <img
+                            src="/src/assets/svg/Logo-SAE303.svg"
+                            alt="Logo Santé et Territoire"
+                            class="w-20 md:w-40 lg:w-60 h-auto object-contain rounded-xl lg:ml-50"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Ma démarche -->
+            <div class="mb-5 pt-6 md:pt-10">
+                <h2
+                    class="h2 text-pink-300 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+                >
+                    En tant que Data Visualization Analyst-Developer
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-3 md:gap-4">
+                            <div
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/folder-cloud.svg"
+                                    alt="icone de données"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm md:text-base">
+                                Collecte et tri des données pour identifier les
+                                tendances clés et les disparités territoriales
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-3 md:gap-4">
+                            <div
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/mouse-square.svg"
+                                    alt="icone de graphique"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm md:text-base">
+                                Création de visualisations et cartes
+                                interactives sur Observable pour explorer les
+                                données
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-3 md:gap-4">
+                            <div
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/brush-2.svg"
+                                    alt="icone de design"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm md:text-base">
+                                Design d'une plateforme claire et intuitive pour
+                                présenter les analyses
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-3 md:gap-4">
+                            <div
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/monitor-mobbile.svg"
+                                    alt="icone de code"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm md:text-base">
+                                Développement du site avec Astro pour une
+                                expérience utilisateur optimale
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Ce que j'ai appris -->
+        <div class="mb-12 md:mb-16 mx-4 md:mx-10 lg:mx-20">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
+                Ce que j'ai appris
+            </h2>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+            >
+                <!-- Card 1 -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
+                        ANALYSE DE DONNÉES
+                    </h3>
+                    <p class="text-sm md:text-base">
+                        J'ai développé mes compétences en tri, structuration et
+                        analyse de données volumineuses pour en extraire des
+                        insights significatifs.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
+                        VISUALISATION
+                    </h3>
+                    <p class="text-sm md:text-base">
+                        J'ai maîtrisé la création de graphiques et cartes
+                        interactives pour rendre les données accessibles et
+                        compréhensibles au public.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
+                        INTÉGRATION COMPLÈTE
+                    </h3>
+                    <p class="text-sm md:text-base">
+                        J'ai acquis une vision globale du projet, de la donnée
+                        brute à sa présentation finale sur le web.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Processus -->
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10 px-4 md:px-0">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
+                Flux de travail
+            </h2>
+
+            <div
+                class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center max-w-6xl mx-auto"
+            >
+                <!-- Image à gauche -->
+                <div class="flex-1 w-full">
+                    <div
+                        class="bg-white/10 rounded-3xl p-6 md:p-8 flex items-center justify-center"
+                    >
+                        <img
+                            src="/src/assets/svg/workflow.svg"
+                            alt="Flux de travail du projet"
+                            class="w-full lg:w-110 h-auto"
+                        />
+                    </div>
+                </div>
+
+                <!-- Textes à droite -->
+                <div class="flex-1 space-y-4 md:space-y-6">
+                    <div>
+                        <p
+                            class="text-base md:text-lg font-semibold mb-3 md:mb-4"
+                        >
+                            Du tri de données à la présentation interactive
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-sm md:text-base leading-relaxed">
+                            Le projet suit un parcours logique : collecte des
+                            données sur l'accréditation médicale, tri et
+                            organisation structurée, création de visualisations
+                            dynamiques sur Observable, puis intégration dans une
+                            plateforme web accessible et ergonomique développée
+                            avec Astro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Visualisations -->
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10 mx-4 md:mx-10 lg:mx-20">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
+                Visualisations et cartographie
+            </h2>
+
+            <div
+                class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center max-w-6xl mx-auto"
+            >
+                <!-- Textes à gauche -->
+                <div class="flex-1 space-y-4 md:space-y-5 order-2 lg:order-1">
+                    <p class="text-sm md:text-base leading-relaxed">
+                        Les visualisations créées sur Observable transforment
+                        les données brutes en histoires visuelles. Chaque
+                        graphique et carte a été pensé pour révéler les
+                        patterns, tendances et disparités géographiques.
+                    </p>
+
+                    <p class="text-sm md:text-base leading-relaxed">
+                        Les cartes interactives permettent d'explorer les
+                        données par région, montrant comment l'accréditation
+                        médicale s'est distribuée inégalement sur le territoire
+                        français.
+                    </p>
+
+                    <p class="text-sm md:text-base leading-relaxed">
+                        Les graphiques chronologiques illustrent la progression
+                        spectaculaire du programme, passant de quelques
+                        centaines à plus de 10 500 médecins accrédités en
+                        quelques années.
+                    </p>
+
+                    <p class="text-sm md:text-base leading-relaxed">
+                        Cette approche visuelle rend les données accessibles et
+                        engageantes pour le public, facilitant la compréhension
+                        des enjeux de santé territoriaux.
+                    </p>
+                </div>
+
+                <!-- Image à droite -->
+                <div class="flex-1 flex items-center w-full order-1 lg:order-2">
+                    <div
+                        class="bg-white/10 rounded-3xl p-4 md:p-6 flex items-center justify-center w-full"
+                    >
+                        <img
+                            src="/src/assets/svg/visualizations.svg"
+                            alt="Exemples de visualisations"
+                            class="w-full h-auto max-w-md lg:max-w-lg"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Plateform web -->
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10 mx-4 md:mx-10 lg:mx-20">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
+                Plateforme web
+            </h2>
+
+            <div
+                class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-4 md:space-y-6"
+            >
+                <!-- Image -->
+                <div class="w-full max-w-3xl">
+                    <div
+                        class="bg-white/10 rounded-3xl p-4 md:p-6 flex items-center justify-center"
+                    >
+                        <img
+                            src="/src/assets/img/plateforme.webp"
+                            alt="Plateforme Santé et Territoire"
+                            class="w-full h-auto"
+                        />
+                    </div>
+                </div>
+
+                <!-- Texte en dessous -->
+                <p class="text-sm md:text-base leading-relaxed lg:px-30">
+                    La plateforme web intègre les visualisations Observable dans
+                    une expérience utilisateur cohérente. Elle présente le
+                    projet, les données clés et les insights principaux de
+                    manière fluide et accessible, guidant le visiteur à travers
+                    les enjeux de santé et territoire.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section Résultats -->
+        <div class="mb-20 md:mb-30 pt-6 md:pt-10 mx-4 md:mx-10 lg:mx-20">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
+                Résultats et impact
+            </h2>
+
+            <div
+                class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-4 md:space-y-6"
+            >
+                <!-- Image -->
+                <div class="w-full max-w-3xl">
+                    <div
+                        class="bg-white/10 rounded-3xl p-4 md:p-6 flex items-center justify-center"
+                    >
+                        <img
+                            src="/src/assets/img/resultats.webp"
+                            alt="Résultats du projet"
+                            class="w-full h-auto"
+                        />
+                    </div>
+                </div>
+
+                <!-- Texte en dessous -->
+                <p class="text-sm md:text-base leading-relaxed lg:px-30">
+                    Ce projet m'a permis de démontrer ma capacité à gérer un
+                    projet complet : de l'acquisition et l'analyse de données à
+                    leur présentation visuelle et interactive. Il illustre
+                    comment la data visualization peut transformer des chiffres
+                    en narratives compréhensibles et impactantes.
+                </p>
+            </div>
+        </div>
+    </div>
+</Layout>
