@@ -50,8 +50,8 @@ import Layout from "../layouts/Layout.astro";
                     <!-- Colonne gauche: texte + 2 photos -->
                     <div class="flex-1 flex flex-col gap-4 md:gap-6">
                         <p class="text-base md:text-lg">
-                            Santé et Territoire est un projet réalisé à partir
-                            de données ouvertes de data.gouv.fr, pour comprendre
+                            Santé et Territoire est un défi réalisé à partir de
+                            données ouvertes de data.gouv.fr, pour comprendre
                             l’accès aux soins selon les territoires. Le but est
                             de trier des jeux de données publics, puis de les
                             mettre en cartes et graphiques interactifs pour
@@ -186,7 +186,7 @@ import Layout from "../layouts/Layout.astro";
             <h2
                 class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
             >
-                Ce que j'ai appris
+                En réalisant le défi
             </h2>
 
             <div
@@ -197,7 +197,7 @@ import Layout from "../layouts/Layout.astro";
                     class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                 >
                     <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
-                        ANALYSE DE DONNÉES
+                        ANALYSE
                     </h3>
                     <p class="text-sm md:text-base">
                         J'ai développé mes compétences en tri, structuration et
@@ -215,8 +215,8 @@ import Layout from "../layouts/Layout.astro";
                     </h3>
                     <p class="text-sm md:text-base">
                         J'ai maîtrisé la création de graphiques et cartes
-                        interactives pour rendre les données accessibles et
-                        compréhensibles au public.
+                        interactives sur Observable pour rendre les données
+                        accessibles et compréhensibles au public.
                     </p>
                 </div>
 
@@ -225,66 +225,69 @@ import Layout from "../layouts/Layout.astro";
                     class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                 >
                     <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
-                        INTÉGRATION COMPLÈTE
+                        INTÉGRATION
                     </h3>
                     <p class="text-sm md:text-base">
-                        J'ai acquis une vision globale du projet, de la donnée
-                        brute à sa présentation finale sur le web.
+                        J’ai acquis une vision globale du projet, de la donnée
+                        brute à sa présentation finale sur le web, en concevant
+                        les visualisations interactives et en développant
+                        l’interface avec Astro et Tailwind CSS.
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- Section Processus -->
-        <div class="mb-12 md:mb-16 pt-6 md:pt-10 px-4 md:px-0">
-            <h2
-                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
-            >
-                Flux de travail
-            </h2>
+        <h2
+            class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl mt-25"
+        >
+            Visualisations et cartographie
+        </h2>
 
-            <div
-                class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center max-w-6xl mx-auto"
-            >
-                <!-- Image à gauche -->
-                <div class="flex-1 w-full">
-                    <div
-                        class="bg-white/10 rounded-3xl p-6 md:p-8 flex items-center justify-center"
-                    >
-                        <img
-                            src="/src/assets/svg/workflow.svg"
-                            alt="Flux de travail du projet"
-                            class="w-full lg:w-110 h-auto"
-                        />
-                    </div>
+        <div
+            class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center max-w-6xl mx-auto"
+        >
+            <!-- Image à gauche -->
+            <div class="flex-1 w-full">
+                <div
+                    class="bg-white/10 rounded-3xl p-6 md:p-8 flex items-center justify-center"
+                >
+                    <img
+                        src="/src/assets/img/donnees.webp"
+                        alt="Flux de travail du projet"
+                        class="w-full lg:w-110 h-auto"
+                    />
+                </div>
+            </div>
+
+            <!-- Textes + bouton à droite -->
+            <div class="flex-1 space-y-4 md:space-y-6">
+                <div>
+                    <p class="text-sm md:text-base leading-relaxed">
+                        Ce projet s’inscrit dans un défi de réutilisation d’open
+                        data porté sur data.gouv.fr : exploiter des jeux de
+                        données publics pour éclairer les enjeux de santé par
+                        territoire. Le parcours couvre le tri et la
+                        structuration des données, la création de visualisations
+                        interactives sur Observable, puis leur intégration dans
+                        une interface claire et accessible.
+                    </p>
                 </div>
 
-                <!-- Textes à droite -->
-                <div class="flex-1 space-y-4 md:space-y-6">
-                    <div>
-                        <p
-                            class="text-base md:text-lg font-semibold mb-3 md:mb-4"
-                        >
-                            Du tri de données à la présentation interactive
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="text-sm md:text-base leading-relaxed">
-                            Le projet suit un parcours logique : collecte des
-                            données sur l'accréditation médicale, tri et
-                            organisation structurée, création de visualisations
-                            dynamiques sur Observable, puis intégration dans une
-                            plateforme web accessible et ergonomique développée
-                            avec Astro.
-                        </p>
-                    </div>
+                <div>
+                    <a
+                        href="https://defis.data.gouv.fr/defis/sante-et-territoires"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 bg-indigo-300 hover:bg-indigo-400 text-black px-5 py-3 rounded-full transition font-medium"
+                    >
+                        VOIR LE DÉFI SUR DATA.GOUV.FR
+                    </a>
                 </div>
             </div>
         </div>
 
         <!-- Section Visualisations -->
-        <div class="mb-12 md:mb-16 pt-6 md:pt-10 mx-4 md:mx-10 lg:mx-20">
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10 mx-4 md:mx-10 lg:mx-20 mt-15">
             <h2
                 class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
             >
@@ -330,7 +333,7 @@ import Layout from "../layouts/Layout.astro";
                         class="bg-white/10 rounded-3xl p-4 md:p-6 flex items-center justify-center w-full"
                     >
                         <img
-                            src="/src/assets/svg/visualizations.svg"
+                            src="/src/assets/img/observable.webp"
                             alt="Exemples de visualisations"
                             class="w-full h-auto max-w-md lg:max-w-lg"
                         />
@@ -351,14 +354,14 @@ import Layout from "../layouts/Layout.astro";
                 class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-4 md:space-y-6"
             >
                 <!-- Image -->
-                <div class="w-full max-w-3xl">
+                <div class="w-full max-w-2xl">
                     <div
                         class="bg-white/10 rounded-3xl p-4 md:p-6 flex items-center justify-center"
                     >
                         <img
-                            src="/src/assets/img/plateforme.webp"
+                            src="/src/assets/img/mockupsante.webp"
                             alt="Plateforme Santé et Territoire"
-                            class="w-full h-auto"
+                            class="w-130 h-auto"
                         />
                     </div>
                 </div>
@@ -386,14 +389,14 @@ import Layout from "../layouts/Layout.astro";
                 class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-4 md:space-y-6"
             >
                 <!-- Image -->
-                <div class="w-full max-w-3xl">
+                <div class="w-full max-w-2xl">
                     <div
                         class="bg-white/10 rounded-3xl p-4 md:p-6 flex items-center justify-center"
                     >
                         <img
-                            src="/src/assets/img/resultats.webp"
+                            src="/src/assets/img/mockupsante2.webp"
                             alt="Résultats du projet"
-                            class="w-full h-auto"
+                            class="w-130 h-auto"
                         />
                     </div>
                 </div>
@@ -403,7 +406,7 @@ import Layout from "../layouts/Layout.astro";
                     Ce projet m'a permis de démontrer ma capacité à gérer un
                     projet complet : de l'acquisition et l'analyse de données à
                     leur présentation visuelle et interactive. Il illustre
-                    comment la data visualization peut transformer des chiffres
+                    comment la data visualisation peut transformer des chiffres
                     en narratives compréhensibles et impactantes.
                 </p>
             </div>
